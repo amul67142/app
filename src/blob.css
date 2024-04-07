@@ -1,0 +1,73 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+.container-blob {
+    position: relative;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent blobs from overflowing */
+    z-index: -1; /* Push blobs behind other content */
+   
+  }
+  
+  .blob {
+    position: absolute;
+    width: 345px; /* Adjust size as needed */
+    height: 345px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the blobs circular */
+    filter: blur(200px); /* Apply blur effect */
+  }
+  
+  .blob1 {
+    top: 0; /* Position at the top of the container */
+    left: 0; /* Position at the left of the container */
+    background: #772BF2; /* Blob 1 color */
+    animation: animate-blob1 6s linear infinite; /* Apply animation to Blob 1 */
+  }
+  
+  .blob2 {
+    bottom: 0; /* Position at the bottom of the container */
+    right: 0; /* Position at the right of the container */
+    background: #FF00B8; /* Blob 2 color */
+    animation: animate-blob2 6s linear infinite; /* Apply animation to Blob 2 */
+  }
+  
+  /* Define animation keyframes for Blob 1 */
+  @keyframes animate-blob1 {
+    0% {
+      transform: translate(0, 0); /* Initial position */
+    }
+    25% {
+      transform: translate(100%, 0); /* Move to the right */
+    }
+    50% {
+      transform: translate(100%, 100%); /* Move to bottom-right */
+    }
+    75% {
+      transform: translate(0, 100%); /* Move to bottom-left */
+    }
+    100% {
+      transform: translate(0, 0); /* Back to the initial position */
+    }
+  }
+  
+  /* Define animation keyframes for Blob 2 */
+  @keyframes animate-blob2 {
+    0% {
+      transform: translate(0, 0); /* Initial position */
+    }
+    25% {
+      transform: translate(-100%, 0); /* Move to the left */
+    }
+    50% {
+      transform: translate(-100%, -100%); /* Move to top-left */
+    }
+    75% {
+      transform: translate(0, -100%); /* Move to top-right */
+    }
+    100% {
+      transform: translate(0, 0); /* Back to the initial position */
+    }
+  }
+  

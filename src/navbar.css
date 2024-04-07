@@ -1,0 +1,24 @@
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: transparent; /* Background color for the navbar */
+  font-family: "Montserrat", sans-serif;
+    
+}
+
+.nav-text {
+ padding: 4px;
+  color: #ffffff;
+}
+
+.nav-head{
+    font-weight: 500;
+}
+.nav-text-1{
+    background-color: black;
+}

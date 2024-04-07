@@ -1,0 +1,71 @@
+.input-container {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 4px;
+  
+   
+  }
+  
+  .input {
+    font-family: poppins;
+   font-size: medium;
+  
+    box-sizing: border-box;
+    width: 560px;
+    height: 43px;
+    border: 1.5px solid #4D4D4D;
+    border-radius: 8px;
+    margin-left: 10px; /* Apply box-sizing to the input */
+  }
+
+  .notifyText{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+.notifyButton{
+   
+   
+    align-items: center;
+   
+    
+    width: 160px;
+    height: 40px;
+    
+    
+    border-radius: 8px;
+    
+margin-left: 10px;
+font-family: poppins;
+font-size:x-large;
+
+
+background: #0F0F0F;
+
+color: white;
+}
+
+.notifyButton.disabled {
+   
+    color: #888; /* Adjust text color for disabled state */
+    cursor: default;
+    background: #5c5b5b
+
+  }
+
+  .notify-message{
+    font-family: poppins;
+    font-size:x-small;
+    font-weight: 300;
+    margin-top: 0px;
+  }

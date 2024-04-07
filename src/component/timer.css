@@ -1,0 +1,35 @@
+.timer {
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;/* Vertically center the timer contents */
+    padding: 20px;
+    gap: 20px;
+   
+    font-size: 36px;
+    
+    width: 260px;
+    height: 106px;
+    
+  
+    
+    background: linear-gradient(99.46deg, #380D2C 0.87%, #E6B8D9 0.88%, #C9B8E6 97.78%);
+    border-radius: 19px;
+    font-family: 'Poppins';
+  }
+
+.timer-container{
+    display: flex;
+    justify-content: center; /* Horizontally center the timer container */
+    align-items: center; /* Vertically center the timer container */
+    
+}
+
+.timer-minutes,
+.timer-seconds,
+.timer-colon {
+    margin: 0 5px;
+}
+
+
+

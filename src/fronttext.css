@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.heading{
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    
+}
+
+.secHeading{
+    font-family: "Source Code Pro", monospace;
+    font-size: 2.5rem;
+
+    background-image: linear-gradient(
+		70deg,
+		#000000 45%, /* font color */
+		#FFF 50%,
+		#000000 55% /* font color */
+	);
+	background-size: 200% 50%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: shine 4s ;
+}
+
+@keyframes shine {
+	0% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.star{
+    margin-bottom: 24px;
+    margin-left: -10px;
+
+    background-image: url('../public/Star.png'); /* Replace 'star.png' with your star image path */
+    background-size: cover;
+    opacity: 0; /* Initially invisible */
+    
+    
+}
+
+.pop {
+    animation: popUp 1s ease-out 1.5s forwards; /* Pop-up animation */
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0); /* Start with no scale (invisible) */
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2); /* Scale up slightly */
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1); /* Return to original scale */
+        opacity: 0;
+    }
+
+
+}
+
+
+
+.rocket{
+    width: 64px; /* Adjust width as needed */
+    height: 64px; /* Adjust height as needed */
+    margin-right: 10px; /* Adjust margin as needed */
+
+
+
+
+}
+.subHead{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+   display: block;
+   margin: 0;
+    
+}
+.b-text{
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+   
+  
+   
+  }
+
+
+
+
+  
